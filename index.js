@@ -9,9 +9,39 @@ Exercise 1
   <li>If input/parameter is other than Number/Value print => 'Nan - Not a Number! Please Input Number' </li>
 </ul>
 
+*/
+console.log("we are here");
+let inputNumber = 30;
+
+if (typeof inputNumber !== "number") {
+  console.log("Nan- Not a number! Please input Number");
+} else if (inputNumber % 3 === 0 && inputNumber % 5 === 0) {
+  console.log("FizzBuzz");
+} else if (inputNumber % 5 === 0) {
+  console.log("Buzz");
+} else if (inputNumber % 3 === 0) {
+  console.log("Fizz");
+} else if (inputNumber % 3 !== 0 || inputNumber % 5 !== 0) {
+  console.log(` ${inputNumber} is not a good number `);
+} else {
+  console.log("nothing worked");
+}
+
+let inputNumberOne = 0;
+let inputNumberTwo = 5;
+let inputNumberThree = 3;
+let inputNumberFour = 6;
+let inputNumberFive = 8;
+
+/* 
+
 Exercise 2 
 
+
+
 Write a JavaScript conditional statement to find the largest of five numbers. 
+
+check input number are the type of number, if not console.log('Invalid inputs')
 
 Sample numbers : -5, -2, -6, 0, -1
 Output : 0
