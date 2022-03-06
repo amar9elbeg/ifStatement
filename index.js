@@ -1,4 +1,79 @@
-/* 
+let inputNumber = 13;
+if (typeof inputNumber !== "number") {
+  console.log("Nan - Not a Number! Please Input Number");
+} else if (inputNumber % 3 === 0 && inputNumber % 5 == 0) {
+  console.log("FizzBuzz");
+} else if (inputNumber % 3 !== 0 && inputNumber % 5 !== 0) {
+  console.log("given Input Number/Value");
+} else if (inputNumber % 3 === 0) {
+  console.log("Fizz");
+} else if (inputNumber % 5 === 0) {
+  console.log("Buzz");
+}
+
+let inputNumberOne = 1;
+let inputNumberTwo = 2;
+let inputNumberThree = 3;
+let inputNumberFour = 4;
+let inputNumberFive = 5;
+if (
+  typeof inputNumberOne !== "number" ||
+  typeof inputNumberTwo !== "number" ||
+  typeof inputNumberThree !== "number" ||
+  typeof inputNumberFour !== "number" ||
+  typeof inputNumberFive !== "number"
+) {
+  console.log("INVALID INPUT");
+} else if (
+  inputNumberOne > inputNumberTwo &&
+  inputNumberOne > inputNumberThree &&
+  inputNumberOne > inputNumberFour &&
+  inputNumberOne > inputNumberFive
+) {
+  console.log("input number one is the biggest");
+} else if (
+  inputNumberTwo > inputNumberOne &&
+  inputNumberTwo > inputNumberThree &&
+  inputNumberTwo > inputNumberFour &&
+  inputNumberTwo > inputNumberFive
+) {
+  console.log("input number two is the biggest");
+} else if (
+  inputNumberThree > inputNumberOne &&
+  inputNumberThree > inputNumberTwo &&
+  inputNumberThree > inputNumberFour &&
+  inputNumberThree > inputNumberFive
+) {
+  console.log("input number three is the biggest");
+} else if (
+  inputNumberFour > inputNumberOne &&
+  inputNumberFour > inputNumberTwo &&
+  inputNumberFour > inputNumberThree &&
+  inputNumberFour > inputNumberFive
+) {
+  console.log("input number four is the biggest");
+} else if (
+  inputNumberFive > inputNumberOne &&
+  inputNumberFive > inputNumberTwo &&
+  inputNumberFive > inputNumberThree &&
+  inputNumberFive > inputNumberFour
+) {
+  console.log("input number five is the biggest");
+}
+let inputLargestOne = 11;
+let inputLargestTwo = 9;
+if (
+  typeof inputLargestOne !== "number" ||
+  typeof inputLargestTwo !== "number"
+) {
+  console.log("invalid input");
+} else if (inputLargestOne > inputLargestTwo) {
+  console.log("input largest number is one");
+} else if (inputLargestTwo > inputLargestOne) {
+  console.log("input largest number is two");
+}
+
+/*
 Exercise 1 
 <h3>Write a function which checks given input/parameter:</h3>
 <ul>
@@ -12,6 +87,7 @@ Exercise 1
 Exercise 2 
 
 Write a JavaScript conditional statement to find the largest of five numbers. 
+check input numbers are the type of number, if not console.log('Invalid inputs
 
 Sample numbers : -5, -2, -6, 0, -1
 Output : 0
@@ -19,6 +95,8 @@ Output : 0
 Exercise 3 
 
 Write a JavaScript program that accept two integers and display the larger.
+
+check input numbers are the type of number, if not console.log('Invalid inputs)
 
 Sample numbers : 2,5
 Output : 5
