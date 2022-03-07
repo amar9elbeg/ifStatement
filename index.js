@@ -127,6 +127,22 @@ if (
 // Choose the correct comparison operator tozs console.log true, when x is equal to y.
 // Choose the correct comparison operator to console.log true, when x is NOT equal to y.
 
+let inputX = 5;
+let inputY = 10;
+if (
+  typeof inputX !== "number" ||
+  typeof inputY !== "number"
+) {
+  console.log("Invalid Input")
+}
+else if (inputX > inputY === true) {
+  console.log("X>Y")
+} else if (inputX == inputY === true) {
+  console.log("X=Y")
+} else if (inputX < inputY) {
+  console.log("X<Y")
+}
+
 // Exercise 6
 
 // The Grade Assigner
@@ -160,6 +176,16 @@ if (
 //     if role is 'Director' return 'Greetings'
 //     if role is '' return 'Please provide role'
 //     else return 'Hi'
+let inputMember = 'Director'
+  if (inputMember = 'Employee') {
+  console.log("Hello")
+} else if (inputMember = 'Director') {
+  console.log("Greetings")
+} else if (inputMember = '') {
+  console.log("Please provide role")
+} else {
+  console.log("Hi") 
+}
 
 // Exercise 9
 
