@@ -129,18 +129,14 @@ if (
 
 let inputX = 5;
 let inputY = 10;
-if (
-  typeof inputX !== "number" ||
-  typeof inputY !== "number"
-) {
-  console.log("Invalid Input")
-}
-else if (inputX > inputY === true) {
-  console.log("X>Y")
-} else if (inputX == inputY === true) {
-  console.log("X=Y")
+if (typeof inputX !== "number" || typeof inputY !== "number") {
+  console.log("Invalid Input");
+} else if (inputX > inputY === true) {
+  console.log("X>Y");
+} else if ((inputX == inputY) === true) {
+  console.log("X=Y");
 } else if (inputX < inputY) {
-  console.log("X<Y")
+  console.log("X<Y");
 }
 
 // Exercise 6
@@ -150,6 +146,30 @@ else if (inputX > inputY === true) {
 //   - takes 1 variable, a number score.
 //   - returns a grade for the score, either "A", "B", "C", "D", or "F".
 // - Call that if/else statement for a few different scores and log the result to make sure it works.
+let inputVariable = 89;
+if (typeof inputVariable !== "number") {
+  console.log("Invalid Input");
+} else if (inputVariable > 89) {
+  console.log("A");
+} else if (inputVariable === 100) {
+  console.log("A");
+} else if (inputVariable > 79) {
+  console.log("B");
+} else if (inputVariable === 80) {
+  console.log("B");
+} else if (inputVariable > 69) {
+  console.log("C");
+} else if (inputVariable === 70) {
+  console.log("C");
+} else if (inputVariable > 59) {
+  console.log("D");
+} else if (inputVariable === 60) {
+  console.log("D");
+} else if (inputVariable < 60) {
+  console.log("F");
+} else if (inputVariable > 100) {
+  console.log("Invalid Input");
+}
 
 // Exercise 7
 
@@ -168,6 +188,35 @@ else if (inputX > inputY === true) {
 
 //  c) If shuttleSpeed is > 17,500, print "ALERT: Escape velocity reached!" Else if shuttleSpeed is < 8000, print "ALERT: Cannot maintain orbit!" Else print "Stable speed".
 
+let engineIndicatorLight = "red blinking";
+let spaceSuitsOn = true;
+let shuttleCabinReady = true;
+let crewStatus = spaceSuitsOn && shuttleCabinReady;
+let computerStatusCode = 400;
+let shuttleSpeed = 15000;
+if (crewStatus === true) {
+  console.log("Crew Ready");
+} else if (crewStatus === false) {
+  console.log("Crew not Ready");
+}
+if (typeof computerStatusCode !== "number") {
+  console.log("Enter Valid Input");
+} else if (computerStatusCode === 200) {
+  console.log("Please stand by. Computer is rebooting.");
+} else if (computerStatusCode === 400) {
+  console.log("Sucess! Computer online.");
+} else if (computerStatusCode < 200 || computerStatusCode > 200) {
+  console.log("ALERT: Computer offline!");
+}
+if (typeof shuttleSpeed !== "number") {
+  console.log("Enter Valid Input");
+} else if (shuttleSpeed > 17500) {
+  console.log("ALERT: Escape velocity reached!");
+} else if (shuttleSpeed < 8000) {
+  console.log("ALERT: Cannot maintain orbit!");
+} else if (shuttleSpeed > 8000) {
+  console.log("Stable speed");
+}
 // Exercise 8
 
 // Write if statement that takes role and return each role with greeting
@@ -176,15 +225,17 @@ else if (inputX > inputY === true) {
 //     if role is 'Director' return 'Greetings'
 //     if role is '' return 'Please provide role'
 //     else return 'Hi'
-let inputMember = 'Director'
-  if (inputMember = 'Employee') {
-  console.log("Hello")
-} else if (inputMember = 'Director') {
-  console.log("Greetings")
-} else if (inputMember = '') {
-  console.log("Please provide role")
+let inputMember = "elbeg";
+if (typeof inputMember !== "string") {
+  console.log("invalid input");
+} else if (inputMember === "Employee") {
+  console.log("Hello");
+} else if (inputMember === "Director") {
+  console.log("Greetings");
+} else if (inputMember === "") {
+  console.log("Please provide role");
 } else {
-  console.log("Hi") 
+  console.log("Hi");
 }
 
 // Exercise 9
@@ -194,12 +245,48 @@ let inputMember = 'Director'
 //     if odd return "the number is odd"
 //     if even return "the number is even"
 
+let inputDice = 6;
+if (typeof inputDice !== "number") {
+  console.log("Please enter a valid input");
+} else if (inputDice % 2 === 0) {
+  console.log("the number is even");
+} else {
+  console.log("the number is odd");
+}
+
 // Exercise 10
 
 // Write If statement that takes string
-//     if string length is more than 10 return the string  has more than 10 characters
+//     if string length is more than 10 return the string has more than 10 characters
 //      if string length is more than 5 return the string has more than 5 characters
 //       if string length is less than 1 return the string has nothing
 //       if string length is equal to 1 return the string has 1 character
+let inputText = "9";
 
-// */
+if (typeof inputText !== "string") {
+  console.log("Enter a valid input text");
+} else if (inputText.length > 10) {
+  console.log(`${inputText} has more than 10 characters`);
+} else if (inputText.length > 5) {
+  console.log(`${inputText} has more than 5 characters`);
+} else if (inputText.length < 1) {
+  console.log(`${inputText} has nothing`);
+} else if (inputText.length === 1) {
+  console.log(`${inputText} has 1 character`);
+}
+
+// Write a JavaScript program which iterates the integers from 0 to 100.
+// But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz".
+// For numbers which are multiples of both three and five print "FizzBuzz". Go to the editor
+// 0 1 2 "Fizz" 4 "Buzz" "Fizz" 7 8 "Fizz" "Buzz" etc // use loop // 
+for (inputLoop = 1; inputLoop <= 100; inputLoop++) {
+  if (inputLoop % 3 === 0 && inputLoop % 5 === 0) {
+    console.log("FizzBuzz")
+  } else if (inputLoop % 3 === 0) {
+    console.log("Fizz");
+  } else if (inputLoop % 5 === 0) {
+    console.log("Buzz")
+  } else {
+    console.log(inputLoop);
+  }
+}
