@@ -175,15 +175,95 @@ else if (inputRole = "director"){
 else if (inputRole === "Employee"){
   console.log("hello")
 }
-let input = 3
+let input = 5
 if (typeof input !=="number"){
   console.log("invalid input")
+}
+else if (input % 2 ==0 ) {
+  console.log("this number is even")
+}
+else {
+  console.log("this number is odd")
+}
+let engineIndicatorLight = "red blinking";
+let spaceSuitsOn = false;
+let shuttleCabinReady = false;
+let crewStatus = spaceSuitsOn && shuttleCabinReady;
+let computerStatusCode = 400;
+let shuttleSpeed = 15000;
+
+
+if (crewStatus === true){
+  console.log("Crew Ready")
+}
+else if (crewStatus === false) {
+  console.log("Crew Not Ready")
+}
+if (computerStatusCode === 200){
+  console.log("Please stand by. Computer is rebooting.")
+}
+else if (computerStatusCode === 400){
+  console.log("Success Computer online.")
+}
+if (shuttleSpeed > 17500){
+  console.log("ALERT Escape velocity reached")
+}
+else if (shuttleSpeed < 8000){
+  console.log("ALERT: Cannot maintain orbit")
+}
+else {
+  console.log("stable speed")
+}
+let inputString = "w"
+if (inputString.length > 10){
+  console.log("this string has more than 10 characters")
+}
+else if (inputString.length > 5){
+  console.log("this string has more than 5 charcters")
+}
+else if (inputString.length < 1){
+  console.log("the string has no characters")
+}
+else if (inputString.length === 1){
+  console.log("this string has 1 character")
 }
 
 
 
 /*
+Exercise 10
+Write If statement that takes string 
+    if string length is more than 10 print the string  has more than 10 characters
+     if string length is more than 5 return the string has more than 5 characters
+      if string length is less than 1 return the string has nothing
+      if string length is equal to 1 return the string has 1 character
+Exercise 7 
 
+let engineIndicatorLight = "red blinking";
+let spaceSuitsOn = true;
+let shuttleCabinReady = true;
+let crewStatus = spaceSuitsOn && shuttleCabinReady;
+let computerStatusCode = 200;
+let shuttleSpeed = 15000;
+
+ 3) Write conditional expressions to satisfy the following safety rules:
+
+ a) If crewStatus is true, print "Crew Ready" else print "Crew Not Ready".
+
+
+ b) If computerStatusCode is 200, print "Please stand by. Computer is rebooting." Else if computerStatusCode is 400, print "Success! Computer online." Else print "ALERT: Computer offline!"
+
+
+ c) If shuttleSpeed is > 17,500, print "ALERT: Escape velocity reached!" Else if shuttleSpeed is < 8000, print "ALERT: Cannot maintain orbit!" Else print "Stable speed".
+
+
+
+
+Write If statement that takes string 
+    if string length is more than 10 return the string  has more than 10 characters
+     if string length is more than 5 return the string has more than 5 characters
+      if string length is less than 1 return the string has nothing
+      if string length is equal to 1 return the string has 1 character
 Exercise 9 
 
 Write If statement that takes number checks if the number is odd or even
@@ -237,10 +317,6 @@ and we are gonna check which one has the bigger number and we have to give value
 
 Exercise 10 
 
-Write If statement that takes string 
-    if string length is more than 10 return the string  has more than 10 characters
-     if string length is more than 5 return the string has more than 5 characters
-      if string length is less than 1 return the string has nothing
-      if string length is equal to 1 return the string has 1 character
+
 
 */
