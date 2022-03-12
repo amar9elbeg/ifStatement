@@ -154,6 +154,20 @@ if (typeof inputX !== "number" || typeof inputY !== "number") {
 // - Call that if/else statement for a few different scores and log the result to make sure it works.
 
 let grade = 59;
+for (let grade = 60; grade <= 100;grade++){
+  if (60 <= grade && grade <= 69){
+    console.log("Your grade is D")
+  }
+  else if (70 <= grade && grade <= 79){
+    console.log("your grade is C")
+  }
+  else if (80 <= grade && grade <= 89){
+    console.log("your grade is B")
+  }
+  else if (90 <= grade && grade <= 100){
+    console.log("your grade is A")
+  }
+}
 if (grade <= 59) {
   console.log("Your grade is F ");
 } else if (60 <= grade && grade <= 69) {
@@ -231,13 +245,13 @@ else if (inputString.length === 1){
 
 
 /*
-Exercise 10
+Exercise 10 j
 Write If statement that takes string 
     if string length is more than 10 print the string  has more than 10 characters
      if string length is more than 5 return the string has more than 5 characters
       if string length is less than 1 return the string has nothing
       if string length is equal to 1 return the string has 1 character
-Exercise 7 
+Exercise 7 j
 
 let engineIndicatorLight = "red blinking";
 let spaceSuitsOn = true;
@@ -264,13 +278,13 @@ Write If statement that takes string
      if string length is more than 5 return the string has more than 5 characters
       if string length is less than 1 return the string has nothing
       if string length is equal to 1 return the string has 1 character
-Exercise 9 
+Exercise 9 j
 
 Write If statement that takes number checks if the number is odd or even
 
     if odd return "the number is odd"
     if even return "the number is even"
-Exercise 8 
+Exercise 8 j
 
 Write if statement that takes role and return each role with greeting
 
@@ -279,7 +293,7 @@ Write if statement that takes role and return each role with greeting
     if role is '' return 'Please provide role'
     else return 'Hi'
 Exercise 7 
-
+j
 let engineIndicatorLight = "red blinking";
 let spaceSuitsOn = true;
 let shuttleCabinReady = true;
